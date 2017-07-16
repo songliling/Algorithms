@@ -20,4 +20,19 @@ function quickSort(arr) {
 
 const arr = [3,2,1,321,12432,432,56,54,312,65,23,4,1,4,1,5,7,58];
 
-console.log(quickSort(arr))
+console.log(quickSort(arr));
+
+
+//去重
+function removeRepeat(arr) {
+  const length = arr.length;
+  let result = [];
+  for(let i=0;i<length;i++){
+    if(result.length === 0 || result[result.length - 1] !== arr[i]) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+console.log(removeRepeat(quickSort(arr)))
