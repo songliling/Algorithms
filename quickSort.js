@@ -37,4 +37,3 @@ function removeRepeat(arr) {
 
 console.log(removeRepeat(quickSort(arr)))
 console.log(111)
-console.log(111)
